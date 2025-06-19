@@ -1,0 +1,25 @@
+[project]
+name = "tech-challenge-backend"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "requests",
+    "python-dotenv",
+    "httpx",
+    "pydantic-settings",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "I", "UP"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"

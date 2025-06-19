@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mock-api:
+    build:
+      context: ./mock-api
+    networks:
+      - app-network
+
+  backend:
+    depends_on:
+      - mock-api
+    environment:
+      # ЭТА СТРОКА ПЕРЕОПРЕДЕЛЯЕТ ЗНАЧЕНИЕ ИЗ .ENV, КОГДА ЭТОТ ФАЙЛ АКТИВЕН
+      - SPORTCLUB_API_BASE_URL=http://mock-api:3004
