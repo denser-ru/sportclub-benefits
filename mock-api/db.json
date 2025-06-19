@@ -1,0 +1,32 @@
+{
+  "beneficios": [
+    {
+      "id": 1,
+      "nombre": "15% Discount at the Fitness Bar (MOCK)",
+      "descripcion": "Get a 15% discount on all protein shakes and healthy snacks at our fitness bar. Just show your club card.",
+      "descuento": 15,
+      "activo": true
+    },
+    {
+      "id": 2,
+      "nombre": "Free Towel (MOCK)",
+      "descripcion": "Forgot your towel? No problem! Get one for free at the reception on every visit.",
+      "descuento": null,
+      "activo": true
+    },
+    {
+      "id": 3,
+      "nombre": "Guest Pass for a Friend (MOCK)",
+      "descripcion": "Bring a friend for a free workout once a month. A great opportunity to train together!",
+      "descuento": null,
+      "activo": false
+    },
+    {
+      "id": 4,
+      "nombre": "Personal Training Session (MOCK)",
+      "descripcion": "20% discount on your first personal training session with any of our certified trainers.",
+      "descuento": 20,
+      "activo": true
+    }
+  ]
+}
